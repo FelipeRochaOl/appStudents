@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         //remove white rows
         self.studentsTableView.tableFooterView = UIView()
 
-        self.peoples = self.factoryStudents(10)
+        self.peoples = self.factoryStudents(15)
     }
     
     func factoryStudents(_ qty: Int) -> [People] {
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         while cont <= qty {
             let getGenero: Genero = cont%2==0 ? .man : .woman
-            arrStudents.append(People.init(name: "Student Name \(cont)", lastname: "Lastname\(cont)", age: 20, email: "email\(cont)@test.com", genero: getGenero ))
+            arrStudents.append(People.init(name: "Student Name \(cont)", lastname: "Lastname\(cont)", age: Int.random(in: 18...70), email: "email\(cont)@test.com", genero: getGenero, avatar: "image\(Int.random(in: 1...7)).png" ))
             cont += 1
         }
         
@@ -57,6 +57,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
         cell?.nameLabel.text = self.peoples[indexPath.row].name
         cell?.lastnameLabel.text = self.peoples[indexPath.row].lastname
+        cell?.avatarImageView.image = UIImage(named: self.peoples[indexPath.row].avatar ?? "user.png")
         
         return cell ?? UITableViewCell()
     }

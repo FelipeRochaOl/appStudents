@@ -18,12 +18,14 @@ class People {
     private (set) var age: Int?
     private (set) var email: String?
     private (set) var genero: Genero?
+    private (set) var avatar: String?
     
-    init(name: String, lastname: String, age: Int, email: String, genero: Genero) {
+    init(name: String, lastname: String, age: Int, email: String, genero: Genero, avatar: String) {
         self.name = name
         self.lastname = lastname
         self.age = age
         self.email = email
         self.genero = genero
+        self.avatar = avatar
     }
 }
