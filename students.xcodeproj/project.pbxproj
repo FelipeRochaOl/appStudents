@@ -16,6 +16,8 @@
 		6B1CF3FB26C1E98D0069AA03 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CF3FA26C1E98D0069AA03 /* People.swift */; };
 		6B1CF3FF26C21C290069AA03 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CF3FD26C21C290069AA03 /* CustomCell.swift */; };
 		6B1CF40026C21C290069AA03 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1CF3FE26C21C290069AA03 /* CustomCell.xib */; };
+		6B1CF40226C231290069AA03 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CF40126C231290069AA03 /* DetailViewController.swift */; };
+		6B73044E26D49D3B00A238C1 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B73044D26D49D3B00A238C1 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6B1CF3FA26C1E98D0069AA03 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		6B1CF3FD26C21C290069AA03 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		6B1CF3FE26C21C290069AA03 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		6B1CF40126C231290069AA03 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6B73044D26D49D3B00A238C1 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				6B1CF3E726C1E4C50069AA03 /* ViewController.swift */,
+				6B1CF40126C231290069AA03 /* DetailViewController.swift */,
+				6B73044D26D49D3B00A238C1 /* EditViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -182,8 +188,10 @@
 				6B1CF3E826C1E4C50069AA03 /* ViewController.swift in Sources */,
 				6B1CF3E426C1E4C50069AA03 /* AppDelegate.swift in Sources */,
 				6B1CF3FF26C21C290069AA03 /* CustomCell.swift in Sources */,
+				6B1CF40226C231290069AA03 /* DetailViewController.swift in Sources */,
 				6B1CF3FB26C1E98D0069AA03 /* People.swift in Sources */,
 				6B1CF3E626C1E4C50069AA03 /* SceneDelegate.swift in Sources */,
+				6B73044E26D49D3B00A238C1 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

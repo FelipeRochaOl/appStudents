@@ -13,19 +13,21 @@ enum Genero: String {
 }
 
 class People {
-    private (set) var name: String?
-    private (set) var lastname: String?
-    private (set) var age: Int?
-    private (set) var email: String?
-    private (set) var genero: Genero?
-    private (set) var avatar: String?
+    var name: String?
+    var lastname: String?
+    var age: Int?
+    var email: String?
+    var genero: Genero?
+    var avatar: String?
+    var customID: Int?
     
-    init(name: String, lastname: String, age: Int, email: String, genero: Genero, avatar: String) {
+    init(name: String, lastname: String, age: Int, email: String, genero: Genero, avatar: String, customID: Int) {
         self.name = name
         self.lastname = lastname
         self.age = age
         self.email = email
         self.genero = genero
         self.avatar = avatar
+        self.customID = customID
     }
 }
